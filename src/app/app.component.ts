@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faThumbsDown,faAddressBook,faBell} from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mypro';
+  bell:any = faBell
+  thumbsdown:any = faThumbsDown
+  address:any = faAddressBook
 }
