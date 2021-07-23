@@ -11,4 +11,11 @@ export class AppComponent {
   bell:any = faBell
   thumbsdown:any = faThumbsDown
   address:any = faAddressBook
+  mycolor:string = "blue"
+
+  setColor(event:any){
+    this.mycolor=event.target.value
+  }
+  mystyle:any={'color':'orange', 'font-size':'40px'}
+
 }
