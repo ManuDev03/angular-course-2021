@@ -29,9 +29,23 @@ export class CalcAppComponent implements OnInit {
       this.value2=num
     }
   }
-  setOpreator(opr){
+  setOpreator(opr:string){
+    if(opr=="="){
+      this.eq_opr = opr
+      if(this.operator =='+'){
+        this.result = parseInt(this.value2)+parseInt(this.value1)
+      }
+      if(this.operator =='-'){
+        this.result = parseInt(this.value1)-parseInt(this.value2)
+      }
+ 
+    }
+    else {
+      this.operator = opr
+    }
     this.operator = opr
     console.log(this.operator)
+    
 
   }
 
