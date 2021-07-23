@@ -9,25 +9,30 @@ export class CalcAppComponent implements OnInit {
   value1:string
   value2:string
   result:number
+  operator=""
+  eq_opr =""
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  getValue1($event:any){
-    this.value1=$event.target.value
 
-  }
-  
-  getValue2($event:any){
-    this.value2=$event.target.value
-
-  }
   add(){
     this.result =parseInt(this.value1)+parseInt(this.value2)
   }
   setValue(num){
     console.log(num)
+    if(this.operator==""){
+      this.value1=num
+    }
+    else{
+      this.value2=num
+    }
+  }
+  setOpreator(opr){
+    this.operator = opr
+    console.log(this.operator)
+
   }
 
 }
