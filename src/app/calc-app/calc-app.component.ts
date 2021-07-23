@@ -26,5 +26,8 @@ export class CalcAppComponent implements OnInit {
   add(){
     this.result =parseInt(this.value1)+parseInt(this.value2)
   }
+  setValue(num){
+    console.log(num)
+  }
 
 }

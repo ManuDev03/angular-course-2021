@@ -5,6 +5,13 @@ height: 400px;">
 Value1<input type="text" (input) = "getValue1($event)">{{value1}} <br>
 Value2<input type="text" (input) = getValue2($event)>{{value2}}
 <button (click) =add()>+</button>
-Result<input type="text" value={{result}}>
+Result<input type="text" value={{result}}><br>
+
+<button *ngFor= "let num of [0,1,2,3]" (click) ="setValue(num)">{{ num }}</button><br>
+<button *ngFor= "let num of [4,5,6,7]" (click) ="setValue(num)">{{ num }}</button><br>
+<button *ngFor= "let num of [8,9]" (click) ="setValue(num)">{{ num }}</button><br>
+<button *ngFor= "let opr of ['+','-','*','/','=']">{{ opr }}</button>
+
+
 
 </div>
