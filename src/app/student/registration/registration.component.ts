@@ -8,7 +8,7 @@ import { Student } from '../student';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent implements OnInit {
-  studentmodel = new Student("max","","","") 
+  studentmodel = new Student("","","","") 
 
   constructor() { }
 
