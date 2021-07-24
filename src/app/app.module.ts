@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule} from '@fortawesome/angular-fontawesome'
 import { CalcAppComponent } from './calc-app/calc-app.component';
+import { StudentModule } from './student/student.module'
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CalcAppComponent } from './calc-app/calc-app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    StudentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
