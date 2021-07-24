@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FontAwesomeModule} from '@fortawesome/angular-fontawesome'
 import { CalcAppComponent } from './calc-app/calc-app.component';
 import { StudentModule } from './student/student.module'
+import { FormsModule } from '@angular/forms'
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { StudentModule } from './student/student.module'
     AppRoutingModule,
     FontAwesomeModule,
     StudentModule,
+    FormsModule
     
   ],
   providers: [],
