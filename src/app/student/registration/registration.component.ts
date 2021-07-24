@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Student } from '../student';
+
 
 @Component({
   selector: 'app-registration',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent implements OnInit {
+  studentmodel = new Student("max","","","") 
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+  save(){
+    console.log(this.studentmodel)
   }
 
 }
