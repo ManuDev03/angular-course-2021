@@ -17,5 +17,6 @@ export class AppComponent {
     this.mycolor=event.target.value
   }
   mystyle:any={'color':'orange', 'font-size':'40px'}
+  condition:true
 
 }
