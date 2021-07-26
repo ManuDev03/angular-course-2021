@@ -7,7 +7,8 @@ import { FontAwesomeModule} from '@fortawesome/angular-fontawesome'
 import { CalcAppComponent } from './calc-app/calc-app.component';
 import { StudentModule } from './student/student.module'
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
-import { EditorComponent } from './editor/editor.component'
+import { EditorComponent } from './editor/editor.component';
+import { ProductEntryComponent } from './product-entry/product-entry.component'
 
 
 
@@ -15,7 +16,8 @@ import { EditorComponent } from './editor/editor.component'
   declarations: [
     AppComponent,
     CalcAppComponent,
-    EditorComponent
+    EditorComponent,
+    ProductEntryComponent
   ],
   imports: [
     BrowserModule,

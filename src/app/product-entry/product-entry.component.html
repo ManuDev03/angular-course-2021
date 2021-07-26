@@ -1,0 +1,33 @@
+<p>product-entry works!</p>
+
+
+<form [formGroup] ="productForm">
+    <div class="row"> 
+        <div class="col">
+        <input type="text" class="form-control" formControlName="pid" placeholder="ProductID">
+    </div>
+
+<div class="col">
+    <input type="text" class="form-control" formControlName="name" placeholder="Name">
+</div>
+</div>
+<br><br>
+<div class="row">
+    <div class="col">
+        <input type="text" class="form-control" formControlName="price" placeholder="Price">
+</div>
+    
+<br><br>
+<div class="row">
+    <div class="col">
+        <input type="text" class="form-control" formControlName="description" placeholder="Description">
+        </div>
+</div>
+
+<br><br>
+</div>
+<div>
+    <input type="submit" value="Add" class="btn btn-primary">
+</div>
+
+</form>
