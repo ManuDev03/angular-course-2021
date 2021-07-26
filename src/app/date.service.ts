@@ -6,4 +6,8 @@ import { Injectable } from '@angular/core';
 export class DateService {
 
   constructor() { }
+
+  getTime_Date(){
+    return new Date()
+  }
 }
