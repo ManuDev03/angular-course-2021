@@ -6,20 +6,24 @@ import { AppComponent } from './app.component';
 import { FontAwesomeModule} from '@fortawesome/angular-fontawesome'
 import { CalcAppComponent } from './calc-app/calc-app.component';
 import { StudentModule } from './student/student.module'
-import { FormsModule } from '@angular/forms'
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { EditorComponent } from './editor/editor.component'
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CalcAppComponent
+    CalcAppComponent,
+    EditorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     StudentModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
     
   ],
   providers: [],
