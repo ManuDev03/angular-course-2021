@@ -11,7 +11,12 @@ export class EditorComponent implements OnInit {
     fname :new FormControl(''),
     lname :new FormControl(''),
     email :new FormControl(''),
-    password :new FormControl('')
+    password :new FormControl(''),
+    address:new FormGroup({
+      houseno: new FormControl(''),
+      dist:new FormControl(''),
+      city:new FormControl('')
+    })
 
   })
 
