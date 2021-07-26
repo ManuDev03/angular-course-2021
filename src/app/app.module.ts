@@ -9,7 +9,8 @@ import { StudentModule } from './student/student.module'
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { EditorComponent } from './editor/editor.component';
 import { ProductEntryComponent } from './product-entry/product-entry.component';
-import { DateComponent } from './date/date.component'
+import { DateComponent } from './date/date.component';
+import { ProductlistComponent } from './productlist/productlist.component'
 
 
 
@@ -19,7 +20,8 @@ import { DateComponent } from './date/date.component'
     CalcAppComponent,
     EditorComponent,
     ProductEntryComponent,
-    DateComponent
+    DateComponent,
+    ProductlistComponent
   ],
   imports: [
     BrowserModule,
