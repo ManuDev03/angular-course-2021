@@ -1,10 +1,13 @@
 <p>product-entry works!</p>
 
 
-<form [formGroup] ="productForm">
+<form [formGroup] ="productForm" (ngSubmit)="add()">
     <div class="row"> 
         <div class="col">
         <input type="text" class="form-control" formControlName="pid" placeholder="ProductID">
+        <!-- <div *ngIf="productForm.value.pid.invalid && name.untouched">
+            Name is required
+        </div> -->
     </div>
 
 <div class="col">
@@ -31,3 +34,4 @@
 </div>
 
 </form>
+{{productForm.status}}
