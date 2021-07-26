@@ -11,6 +11,7 @@ import { EditorComponent } from './editor/editor.component';
 import { ProductEntryComponent } from './product-entry/product-entry.component';
 import { DateComponent } from './date/date.component';
 import { ProductlistComponent } from './productlist/productlist.component'
+import { HttpClientModule } from '@angular/common/http'
 
 
 
@@ -29,7 +30,8 @@ import { ProductlistComponent } from './productlist/productlist.component'
     FontAwesomeModule,
     StudentModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
     
   ],
   providers: [],
